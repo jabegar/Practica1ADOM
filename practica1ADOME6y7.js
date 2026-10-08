@@ -17,3 +17,17 @@ function mostrar() {
     }
     oculto = !oculto;
 }
+
+function aumentarTamanio() {
+    var cambioTamanio = document.getElementById('cambioTamanio');
+    var tamanioActual = parseInt(window.getComputedStyle(cambioTamanio).fontSize);
+
+    cambioTamanio.style.fontSize = tamanioActual + 1 + 'px';
+}
+
+function reducirTamanio() {
+    var cambioTamanio = document.getElementById('cambioTamanio');
+    var tamanioActual = parseInt(window.getComputedStyle(cambioTamanio).fontSize);
+
+    cambioTamanio.style.fontSize = tamanioActual - 1 + 'px';
+}
